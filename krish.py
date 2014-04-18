@@ -151,6 +151,26 @@ fi.close()   # closes the file
 
 # importing the OS module will helps to rename the files
 
-import os
+import os      # this imports the os module....!
 
-os.rename("new.txt","new_new.txt")
+os.rename("old_file_name.txt","new_name.txt")
+
+# We can remove the file .. simply delete 
+
+os.remove("file_name") 
+
+# mkdir - for making new directory.....! 
+
+os.mkdir("new_dir")
+
+# chdir  - change the dir......!
+
+os.chdir("dir_name")
+
+# pwd current working directory...!
+
+os.getcwd()
+
+# rmdir - remove the directory
+
+os.rmdir("dir_name")
