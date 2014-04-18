@@ -1,3 +1,13 @@
+
+# Dealing with Python basics
+
+""" 
+    This page covers max all the topics 
+    conditional , loops , format string , string functions , lists
+    Dictionaries , files , directory , functions , definitions , 
+    modules , Exception handling
+                                         """
+
 for y in xrange(1,10):
 	print y
 
@@ -173,4 +183,24 @@ os.getcwd()
 
 # rmdir - remove the directory
 
-os.rmdir("dir_name")
+os.rmdir("dir_name")  
+
+# Exception handling
+
+
+try:
+   fh = open("jahe.txt","r+")
+   fh.write("Hai this is another file....!")
+except IOError:
+  print "Their is no file found with name jahe.txt check it once buddy"   
+else:
+  print "File found dude"  
+
+
+  # raise -  we can raise Exception
+
+  def function_name(level):
+  	   if level<1:
+  	   	  raise "Their is an error in this level"
+  	   	  # the code below would not be executre if we raise this exception
+
