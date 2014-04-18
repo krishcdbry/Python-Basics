@@ -109,7 +109,7 @@ print car_one.color
 
 krishbook = {
      "krish":909090909,
-   "Mohan": 9642988749
+   "Mohan": 964298874
 }
 
 # OR 
@@ -129,7 +129,19 @@ krishbooks.pop("one")
 
 print krishbooks
 
+# Dealing with files
 
-import foo.bar
- 
-    from foo import bar
+"""  Creating the file not exists  """
+
+fi = open("new.txt","wb")
+fi.write("Hello this is krishcdbry's file buddy \n \n \n and This is just a cool python script");
+fi.close()
+
+""" Reading the file """
+
+fi = open("new.txt","r+")
+str = fi.read()
+print " Reading the file =  %s "%(str)
+fi.tell()   # Tells the position of the cursor 
+fi.seek(0,10)   # Repositioning the cursor
+fi.close()   # closes the file 
