@@ -145,3 +145,12 @@ print " Reading the file =  %s "%(str)
 fi.tell()   # Tells the position of the cursor 
 fi.seek(0,10)   # Repositioning the cursor
 fi.close()   # closes the file 
+
+
+# Renaming the file name
+
+# importing the OS module will helps to rename the files
+
+import os
+
+os.rename("new.txt","new_new.txt")
