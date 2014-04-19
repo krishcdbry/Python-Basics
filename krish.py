@@ -6,6 +6,8 @@
     conditional , loops , format string , string functions , lists
     Dictionaries , files , directory , functions , definitions , 
     modules , Exception handling
+                                    
+    Remaining parts is covered in krish_two.py
                                          """
 
 for y in xrange(1,10):
