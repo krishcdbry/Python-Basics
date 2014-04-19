@@ -59,7 +59,12 @@ print getattr(car1,'name')               # Getting the result - here the name Bu
 
 # Built-in class attributes    like  __doc__   , __dict__ , __module__ , __bases__ , __name__
 
-print 
+print oneKrish.__dict__                  # Which gives the Dictinoary contains classnames
+print oneKrish.__doc__                   #  The description about the class
+print oneKrish.__name__                  # Name of the class
+print oneKrish.__module__                # Module name in which the class is defined. This attribute is "__main__" in interactive mode.
+print oneKrish.__bases__                 # Possibly an empty tuple containing base class
 
+# Destroying object by using the __del__() destructor
 
-
+__del__ car3
